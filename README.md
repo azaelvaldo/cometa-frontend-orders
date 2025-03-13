@@ -17,6 +17,11 @@ pnpm dev
 bun dev
 ```
 
+TESTS
+```bash
+npm test
+```
+
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
 Puedes comenzar a editar la página modificando `app/page.tsx`. La página se actualiza automáticamente a medida que editas el archivo.

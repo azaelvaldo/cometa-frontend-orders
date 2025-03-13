@@ -8,15 +8,12 @@ export default function Home() {
   useEffect(() => {
     fetch("http://127.0.0.1:8000/order")
       .then((res) => {
-        console.log(res);
         return res.json()
       })
       .then((data) => {
-        console.log(data);
         return setOrder(data)
       })
-      .catch((err) => console.error("Error fetching order:", err));
-    console.log(order);
+      .catch((err) => console.error("Error obteniendo orden:", err));
   }, []);
 
   if (!order) return <div className="text-center p-10">Cargando...</div>;
